@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">android.oemindia.com</domain>
+        <pin-set expiration="2021-04-02">
+            <pin digest="SHA-256">aHSK4wdhjCNmZD8A7tdHuexgUd+Hv24X2tFTCYSKrG4=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
