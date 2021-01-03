@@ -81,14 +81,9 @@ public class Login extends AppCompatActivity {
 
     private void jsonParse() {
 
-        // HERE URL IS Web SERVER
-        // String url="http://abstractional-metho.000webhostapp.com/appointment.php";
-        // HERE URL IS LOCAL SERVER
+
         String subdomainurl="https://android.oemindia.com/checkuser.php";
 
-        String url = "https://oemindia.com/androidapp/checkuser.php";
-
-        String url2 = "https://play4deal.com/oemtesting/checkuser.php";
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.POST, subdomainurl,
@@ -96,7 +91,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
-                        Log.i("response", response);
+                    //    Log.i("response", response);
 
                         // here we are checking for response cases
                         Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
